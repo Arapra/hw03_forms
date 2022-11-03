@@ -1,12 +1,12 @@
+from django.shortcuts import get_object_or_404, redirect, render
+
+from django.contrib.auth.decorators import login_required
+
 from .forms import PostForm
 
 from .models import Group, Post, User
 
 from .utils import paginate_page
-
-from django.shortcuts import get_object_or_404, redirect, render
-
-from django.contrib.auth.decorators import login_required
 
 
 POST_PER_PAGE = 10
